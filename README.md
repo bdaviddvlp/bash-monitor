@@ -9,6 +9,8 @@ Must have `curl` installed.
 
 ### Installation
 
+- Running on host:
+
 ```
 git clone https://github.com/bdaviddvlp/bash-monitor.git
 cd bash-monitor
@@ -17,10 +19,24 @@ cd config
 cp example.bash-monitor.conf bash-monitor.conf # add urls you want to monitor
 ```
 
+- Running in docker container:
+
+```
+docker-compose up -d
+```
+
 ### Usage
+
+On host:
+
 - Start the monitor: `./init_monitor.sh`
 - List running processes `./show_status.sh`
 - Kill running proceses `./kill_monitor.sh`
+
+In container:
+
+ - List running processes: `docker exec -it bash-monitor-app-1 /app/show_status.sh`
+ - Stop monitor: `docker-compose down`
 
 
 ### Improvements planned
