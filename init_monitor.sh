@@ -62,3 +62,6 @@ rm *_process.sh
 echo 'All processes have been started.'
 
 echo 'To stop the url watchers, run the kill_monitor.sh script.'
+
+# keep alive container
+tail -f /dev/null
