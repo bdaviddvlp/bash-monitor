@@ -1,0 +1,6 @@
+response*
+status*
+nohup*
+.env
+/config/bash-monitor.conf
+*_process.sh
